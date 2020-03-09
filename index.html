@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moore's Forge and Creations</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -18,59 +19,59 @@
             </ul>
         </div>
     </nav>
-    <header>
-        <div class="slider-container">
-            <div class="slide" style="background-image: url('fire-flame-forge-266394.jpg');"><!-- bg image -->
-                <div class="gradient-overlay-heading">
-                    <div class="container">
-                        <div class="slider-text-wrapper">
-                            <h2>Welcome to Dans Forge</h2>
-                            <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
-                            <a href="#new-products" class="call-to-action button"></a>
-                        </div>
-                    </div>
+    <section>
+        <div class="container" style="background-image: url('flames.jpg');">
+            <div class="slider-container">
+                <div class="slide">
+                    <button class="previous"></button>
+                    <button class="next"></button>
+                    <h2>Welcome to Dans Forge</h2>
+                    <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
+                    <a href="#new-products" class="call-to-action button"></a>
+                </div>
+                <div class="slide">
+                    <button class="previous"></button>
+                    <button class="next"></button>
+                    <h2>Welcome to Dans Forge</h2>
+                    <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
+                    <a href="#new-products" class="call-to-action button"></a>
+                </div>
+                <div class="slide">
+                    <button class="previous"></button>
+                    <button class="next"></button>
+                    <h2>Welcome to Dans Forge</h2>
+                    <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
+                    <a href="#new-products" class="call-to-action button"></a>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('fire-flame-forge-266394.jpg');"><!-- bg image -->
-                <div class="gradient-overlay-heading">
-                    <div class="container">
-                        <div class="slider-text-wrapper">
-                            <h2>Welcome to Dans Forge</h2>
-                            <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
-                            <a href="#new-products" class="call-to-action button"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide" style="background-image: url('fire-flame-forge-266394.jpg');"><!-- bg image -->
-                <div class="gradient-overlay-heading">
-                    <div class="container">
-                        <div class="slider-text-wrapper">
-                            <h2>Welcome to Dans Forge</h2>
-                            <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
-                            <a href="#new-products" class="call-to-action button"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- slide -->
-            
-            <!-- gradient overlay-->
-            <!-- text -->
-        <!-- Page title -->
-        <div class="container">
-            
-        </div>
-    </header>
+        </div> 
+    </section>
     <section class="my-gradient-bg-2">
         <div class="container">
             <h2>What We Do</h2>
-            <p></p>
             <img src="#" alt="random">
             
         </div>
     </section>
 
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() { 
+            $('.slider-container').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 10000,
+                nextArrow: $("button.next"), 
+                prevArrow: $("button.previous")
+            });
+        });
+
+    </script>
 </body>
 </html>
