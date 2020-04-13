@@ -19,42 +19,64 @@
             </ul>
         </div>
     </nav>
-    <section>
-        <div class="container" style="background-image: url('flames.jpg');">
-            <div class="slider-container">
-                <div class="slide">
-                    <button class="previous"></button>
-                    <button class="next"></button>
-                    <h2>Welcome to Dans Forge</h2>
-                    <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
-                    <a href="#new-products" class="call-to-action button"></a>
-                </div>
-                <div class="slide">
-                    <button class="previous"></button>
-                    <button class="next"></button>
-                    <h2>Welcome to Dans Forge</h2>
-                    <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
-                    <a href="#new-products" class="call-to-action button"></a>
-                </div>
-                <div class="slide">
-                    <button class="previous"></button>
-                    <button class="next"></button>
-                    <h2>Welcome to Dans Forge</h2>
-                    <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
-                    <a href="#new-products" class="call-to-action button"></a>
+
+        <section>
+            <div id="flame-bg"  style="background-image: url('hammer.jpg');">
+               <h2>Moore's Forge  <br> and Creations</h2>
+                <div id="logo">
+                        <img src="#" alt="logo-design">
+                    </div>
+            </div>
+        </section>
+
+     <section>
+        
+        <div>
+            <div class="container">
+                
+                <div class="slider-container">
+                    
+                    <div class="slide">
+                        <div class="buttons">
+                            <button class="previous"></button>
+                            <button class="next"></button>
+                        </div>
+                        
+                        <h3>Welcome to Dans Forge</h3>
+                        <p>Goulburns hidden little secret and pocket of brilliant forging odds and ends, take a look at what Moore's Forge has today.</p>
+                        <p>Not only does Moore's Forge make and sell items created on a forge, we also create other
+                            items, such as paintings, leather work and some wire work.
+                        </p>
+                        
+                    </div>
+                    <div class="slide">
+                        <div class="buttons">
+                            <button class="previous"></button>
+                            <button class="next"></button>
+                        </div>
+                        <h3>Welcome to Dans Forge</h3>
+                        <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
+                        <a href="#new-products" class="call-to-action button"></a>
+                    </div>
+                    <div class="slide">
+                        <div class="buttons">
+                            <button class="previous"></button>
+                            <button class="next"></button>
+                        </div>
+                        <h3>Welcome to Dans Forge</h3>
+                        <p>Goulburns hidden little secret and pocket of brilliant forging odds and end take a look at what Dans has today</p>
+                        <a href="#new-products" class="call-to-action button"></a>
+                    </div>
                 </div>
             </div>
+            
         </div> 
     </section>
-    <section class="my-gradient-bg-2">
-        <div class="container">
-            <h2>What We Do</h2>
-            <img src="#" alt="random">
-            
-        </div>
+    <section>
+        
     </section>
 
-
+    
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -66,12 +88,15 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 10000,
+                autoplaySpeed: 2000,
                 nextArrow: $("button.next"), 
-                prevArrow: $("button.previous")
+                prevArrow: $("button.previous"),
+                dots: true,
+                appendDots: $('.slider-container')
             });
         });
 
+        
     </script>
 </body>
 </html>

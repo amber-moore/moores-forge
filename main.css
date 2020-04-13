@@ -11,8 +11,7 @@ html, body{
 
 
 .slider-container{
-    height: 700px;
-    max-width: 500px;
+    max-width: 475px;
     width: 100%;
     padding: 50;
 }
@@ -103,16 +102,76 @@ nav .brand h1{
 .slick-track{
     height:100%
 }
+.slide .buttons {
+    text-align: right;
+}
 button.previous, 
 button.next{
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     border: none;
     color: white;
+    background-image: url("arrow.svg");
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+/* icon by https://www.flaticon.com/authors/google */
 button.previous{
     background-color: red;
+    transform-origin: 50% 50%;
+    transform: rotate(180deg);
 }
 button.next{
     background-color: green;
 }
+
+
+
+ul.slick-dots{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+ul.slick-dots li{
+    display: inline-block;
+}
+ul.slick-dots li.slick-active button{
+    width: 20px;
+    background-color: #ec9511;
+}
+ul.slick-dots li button{
+    transition-duration: 2000ms;
+    font-size: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+#flame-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px #ec9511 solid;
+    border-width: 3px 0;
+    background-position: 50% 50%;
+}
+h2{
+    text-align: center;
+    text-shadow: 4px 4px 6px white;
+    font-size: 75px;
+    font-style: italic;  
+    color: rgb(2, 1, 15)
+}
+#logo{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
